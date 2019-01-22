@@ -1,0 +1,72 @@
+@import "../../sass//variables";
+
+.SignupForm {
+    width: 50rem;
+    height: 70rem;
+    margin: 0 auto;
+    border-radius: .2rem;
+    border: 1px solid $color-grey-dark;
+    box-shadow: 2rem 2rem 4rem rgba($color-black,.3);
+    
+    &__text {
+        margin: 4rem;
+
+        & h2 {
+            
+        }
+
+        & p {
+            font-size: 1.6rem;
+            margin-top: 1rem;
+            color: $color-grey-dark;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__input {
+        display: flex;
+        height: 3rem;
+        margin: 1rem;
+        width: 80%;
+        padding-left: 2rem;
+
+        &-first {
+            margin: 1rem;
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &[name="firstName"] {
+            margin: 0;
+            width: 48%;
+        }
+        
+        &[name="lastName"] {
+            margin: 0;
+            width: 48%;
+        }
+    }
+
+    &__button {
+        margin-top: 3rem;
+        height: 4rem;
+        width: 80%;
+        background-color: $color-primary-blue;
+        color: white;
+    }
+
+    &__link {
+
+    }
+
+    &__login {
+        margin: 4rem;
+    }
+}
