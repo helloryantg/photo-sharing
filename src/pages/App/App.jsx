@@ -9,7 +9,7 @@ import userService from '../../utils/userService';
 import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
 
-import SignupForm from '../../components/SignupForm/SignupForm';
+// import SignupForm from '../../components/SignupForm/SignupForm';
 
 class App extends Component {
   state = { user: null };
@@ -33,10 +33,10 @@ class App extends Component {
       <div className="App">
         <Router>
           <Switch>
-            <Route exact path="/" render={() =>
+            {/* <Route exact path="/" render={() =>
               <SignupForm />
-            } />
-            <Route exact path ='/signup' render={({history}) => 
+            } /> */}
+            <Route exact path ='/' render={({history}) => 
               <SignupPage 
                 history={history}
                 handleSignupOrLogin={this.handleSignupOrLogin}

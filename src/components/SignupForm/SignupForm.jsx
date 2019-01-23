@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './SignupForm.scss';
-import { Link } from 'react-router-dom';
 import userService from '../../utils/userService';
 
 class SignupForm extends Component {
@@ -53,7 +52,6 @@ class SignupForm extends Component {
           <input className="SignupForm__input" type="password" placeholder="Password" value={this.state.password} name="password" onChange={this.handleChange} />
           <input className="SignupForm__input" type="password" placeholder="Confirm Password" value={this.state.passwordConf} name="passwordConf" onChange={this.handleChange} />
           <button className="SignupForm__button" disabled={this.isFormInvalid()}>Create account</button>&nbsp;&nbsp;
-          <Link className="SignupForm__link" to='/'>Cancel</Link>
         </form>
 
         <div className="SignupForm__login">
